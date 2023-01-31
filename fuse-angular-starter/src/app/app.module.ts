@@ -12,7 +12,7 @@ import { mockApiServices } from 'app/mock-api';
 import { LayoutModule } from 'app/layout/layout.module';
 import { AppComponent } from 'app/app.component';
 import { appRoutes } from 'app/app.routing';
-
+import { ClassyLayoutComponent } from './layout/layouts/vertical/classy/classy.component';
 const routerConfig: ExtraOptions = {
     preloadingStrategy       : PreloadAllModules,
     scrollPositionRestoration: 'enabled'
@@ -20,7 +20,7 @@ const routerConfig: ExtraOptions = {
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
     ],
     imports     : [
         BrowserModule,
